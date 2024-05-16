@@ -172,7 +172,7 @@ const projects = [
 		process:
 			"Made with QGIS to create & style layers & GDAL to vectorize the raster image; Illustrator for some final touchups",
 		type: "static",
-		outcome: "",
+		outcome: "Here is a good example of the power of combining different source material.",
 		date: "Oct 2023",
 	},
 	{
