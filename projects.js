@@ -14,7 +14,7 @@ const projects = [
 		date: "2021",
 	},
 	{
-		name: "Forecasting Hurricane Otis",
+		name: "Forecasting Hurricane Otis (Master's Capstone)",
 		about: "",
 		tools: "",
 		link: "https://michael-sparks13.github.io/otis/",
@@ -167,8 +167,8 @@ const projects = [
 		about:
 			"I took an old school map of the US in 1957 by Erwin Raisz, vectorized it in QGIS, and then added a country layer and trail layer. I modeled the map's style after the original by Mr. Raisz",
 		tools: "QGIS, GDAL, Illustrator",
-		link: "images/projects/PCT.png",
-		img: "images/projects/PCT.png",
+		link: "images/projects/pct.png",
+		img: "images/projects/pct.png",
 		process:
 			"Made with QGIS to create & style layers & GDAL to vectorize the raster image; Illustrator for some final touchups",
 		type: "static",
