@@ -7,7 +7,7 @@ const projects = [
 		link: "https://www.crowdedparks.org",
 		img: "images/projects/crowded-cover.jpg",
 		process:
-			"I actually used SquareSpace to start. I didn't know how to code so that was the quickest way to get a site up and running and publish my reporting while working on this in the background. From there, I basically used Google and YouTube to figure out how to make my own version of the site. Thus, my first foray into web development.",
+			"I actually used SquareSpace to start. I didn't know how to code so that was the quickest way to get a site up and running and publish my reporting while working on this in the background. From there, I basically used Google and YouTube to figure out how to make my own version of the site. This marked my first foray into web development.",
 		type: "journalism",
 		outcome:
 			"I learned a few valuable lessons that I still take with me today: (1) the value of breaking down large projects into manageable 'problems' and then focusing on solving them one by one. (2) The value of using existing work as a starting point. No need to reinvent the wheel everytime. (3). Of course, all of the mechanics that go into building a website!",
@@ -56,7 +56,7 @@ const projects = [
 	{
 		name: "Canadian Wildfires",
 		about:
-			"An interactive comparision of 2023's fire season with the previous 10 years.",
+			"An interactive comparison of 2023's fire season with the previous 10 years.",
 		tools: "Made with Leaflet, MapTiler, and MapShaper.com.",
 		link: "https://michael-sparks13.github.io/canadian-wildfires/",
 		img: "images/projects/wildfires.png",
@@ -70,7 +70,7 @@ const projects = [
 	{
 		name: "Historic Trails",
 		about:
-			"A beautiful static map with light shaded relief showing some hisotric trails.",
+			"A beautiful static map with light shaded relief showing some historic trails.",
 		tools: "Created with Adobe Illustrator and data from Natural Earth",
 		link: "images/projects/trails.png",
 		img: "images/projects/trails.png",
@@ -172,7 +172,8 @@ const projects = [
 		process:
 			"Made with QGIS to create & style layers & GDAL to vectorize the raster image; Illustrator for some final touchups",
 		type: "static",
-		outcome: "Here is a good example of the power of combining different source material.",
+		outcome:
+			"Here is a good example of the power of combining different source material.",
 		date: "Oct 2023",
 	},
 	{
