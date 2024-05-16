@@ -1,0 +1,293 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Set primary and secondary colors */
+body {
+    background-color: #fdfdfd; /* Kentucky white */
+    color: #444444; /* Black */
+    font-family: "Source Serif 4", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Header Styles */
+header {
+    background-color: #dddddd25; /* Kentucky white */
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: right;
+    padding-right: 20%;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+    padding-right: 20px; /* Added right padding */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #4f4f4f; /* Black */
+    font-weight: bold;
+}
+
+/* Hero Section Styles */
+.hero {
+    height: calc(100vh / 3);
+    background-image: url('images/projects/andrew-neel-1-29wyvvLJA-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #efefef; /* White */
+}
+
+.overlay h1 {
+    font-size: 4em;
+    margin-bottom: 10px;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.overlay p {
+    font-size: 2em;
+     font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  color:#fff;
+}
+
+/* Projects Section Styles */
+.projects {
+    padding-top: 50px; /* Adjust as needed */
+    text-align: center;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.project-buttons button {
+    margin: 10px 10px;
+    padding: 10px 20px;
+    background-color: #0073e6; /* Kentucky blue */
+    color: #ffffff; /* White */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+     font-family: "Oxygen", sans-serif;
+     font-size: 1rem;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.project-buttons button:hover {
+    background-color: #0059b3; /* Darker shade of Kentucky blue */
+    transform: scale(1.15);
+}
+
+.project-buttons button:focus {
+    outline: none;
+}
+
+/* Styles for project cards */
+.project-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px -5px; /* Add spacing between cards */
+}
+
+.project-card {
+    width: calc(33.333% - 20px); /* Default width for large screens */
+    height: calc(20% - 20px);
+    margin-bottom: 20px; /* Add spacing between rows */
+    box-sizing: border-box;
+    border: 2px solid #eaeaea; /* Add outline */
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    position: relative;
+        z-index: 1; /* Ensure all cards are initially on the same stacking level */
+
+
+}
+
+.project-card .project-name {
+    position: absolute;
+    top: 10px; /* Adjust top position as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 5px 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+}
+
+.project-card p {
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.project-card:hover {
+    transform: scale(1.25); /* Enlarge the card on hover */
+        z-index: 2; /* Ensure all cards are initially on the same stacking level */
+
+}
+
+
+/* About Me Section Styles */
+.about-content {
+    padding: 0 35%; /* 1/4 of the page worth of padding on each side */
+    text-align: right; /* Text right-aligned */
+      font-family: "Source Serif 4", serif;
+}
+
+.about-content section {
+    margin: 25px 0px;
+}
+
+.about-me h2,
+.career-transition h2,
+.seeking-role h2 {
+    text-align: left; /* Header text left-aligned */
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  margin-bottom: 10px;
+}
+
+.about-me p,
+.career-transition p,
+.seeking-role p {
+    text-align: left; /* Paragraph text left-aligned */
+      font-family: "Source Serif 4", serif;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin: 10px 0;
+}
+
+.about-me p a {
+    color: #0073e6;
+}
+
+.about-me ul {
+    text-align: left; /* List text left-aligned */
+}
+
+/* Styles for about images */
+.about-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px; /* Adjust margin as needed */
+}
+
+.about-image {
+    width: 30%; /* Each image takes up 30% of the container */
+    border-radius: 50%; /* Make images circular */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.about-image img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Project Details Page Styles */
+.project-details {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    font-family: "Source Serif 4", serif;
+}
+
+.project-details h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.project-details p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.project-details img {
+    width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+.project-details a {
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    color: #0073e6; /* Link color */
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
+
+.project-details #projectDate {
+    font-size: 0.9em;
+    color: #666;
+    text-align: right;
+}
+
+#projectProcess, 
+#projectOutcome,
+#projectTools {
+    font-style: bold;
+}
+
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    nav ul {
+        padding-right: 0;
+    }
+}
+
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    .project-card {
+        width: calc(50% - 10px); /* 2 cards per row */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .project-card {
+        width: calc(100% - 10px); /* 1 card per row */
+    }
+}

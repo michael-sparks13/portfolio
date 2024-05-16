@@ -1,105 +1,59 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Data Journalist and Digital Cartographer</title>
-    <meta
-      name="viewport"
-      content="initial-scale=1,maximum-scale=1,user-scalable=no"
-    />
-    <link
-      rel="icon"
-      href="https://newmapsplus.github.io/favicon.ico"
-      type="image/x-icon"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
-      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
-      crossorigin=""
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:700i|Fira+Sans"
-      rel="stylesheet"
-    />
-    <!-- load style sheets -->
-    <link rel="stylesheet" href="styles/map.css" />
-    <link rel="stylesheet" href="Leaflet.markercluster-1.4.1/dist/MarkerCluster.css" />
-    <link rel="stylesheet" href="Leaflet.markercluster-1.4.1/dist/MarkerCluster.Default.css" />
-    <link rel="stylesheet" href="sidebar/sidebar.css" />
-    
+<html lang="en">
 
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <body>
+    <link rel="icon" href="images/projects/uk-logo.png" type="image/x-icon">
+
+    <title>Michael Sparks - Portfolio</title>
+
+
+    <link rel="stylesheet" href="styles.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Danfo&family=Oswald:wght@200..700&family=Oxygen:wght@300;400;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
     <header>
-      <h1>Michael Sparks - Data Journalist and Digital Cartographer</h1>
-      <h2>View my maps, projects, and articles by locale</h2>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Portfolio</a></li>
+                <li><a href="resume.html">Resume</a></li>
+            </ul>
+        </nav>
+        <div id="hamburgerMenu" class="hamburger-menu">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
     </header>
-
-    <section>
-      <div id="map"></div>
-
-      <div id="sidebar"></div>
-      <div class="row">
-        <div class="first-column">
-          <h2>About Me</h2>
-          <p>
-            I am a freelance data journalist, cartographer, and web designer.
-            I'm especially passionate about maps that help protect our
-            environment. I can work across a variety of technologies including
-            Javascript, Python, QGIS, Mapbox, Leaflet. In my free time I run
-            IRONMAN triathlons. I am currently a Master's student in Digital
-            Mapping at the University of Kentucky.
-          </p>
-
-          <p>You can see my work in list form <a href="list.html">here</a></p>
-          <p>
-            Or, of course, on my
-            <a
-              href="https://github.com/michael-sparks13?tab=repositories"
-              target="_"
-              >Github</a
-            >
-          </p>
+    <section class="hero">
+        <div class="overlay">
+            <h1>MICHAEL SPARKS</h1>
+            <p>Cartographer | GIS Analyst | Journalist</p>
         </div>
-        <div class="second-column">
-          <h2>Technologies and Skills</h2>
-          <ul>
-            <li>
-              QGIS for geospatial data analysis, manipulation, and conversion
-            </li>
-            <li>
-              Mapbox GL, Mapbox Studio, and Leaflet for interactive web mapping
-            </li>
-            <li>
-              Python and Pandas for scraping, cleaning, and analyzing data
-            </li>
-          </ul>
+    </section>
+    <section class="projects">
+        <div class="project-buttons">
+            <button id="allProjectsButton">All Projects</button>
+            <button id="interactiveButton">Interactive Maps</button>
+            <button id="staticButton">Static Maps</button>
+            <button id="journalismButton">Journalism</button>
         </div>
-      </div>
     </section>
 
-    <footer>
-      <hr />
-      <p>I'd love to hear from you: michael.sparks13 at gmail</p>
-    </footer>
-    <script src="http://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
-    <script src="sidebar/sidebar.js"></script>
-    <script src="js/map.js" type="module"></script>
-    <!-- load js for market cluster -->
-    <script src="Leaflet.markercluster-1.4.1/dist/leaflet.markercluster-src.js"></script>
-    <script src="Leaflet.markercluster-1.4.1/src/MarkerCluster.js" type="module"></script>
-  </body>
+    <section class="project-cards" id="projectCards">
+        <!-- Project cards will be dynamically added here -->
+    </section>
+
+    <script src=script.js type="module"></script>
+</body>
+
 </html>
