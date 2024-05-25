@@ -102,6 +102,7 @@ nav ul li a {
 .project-buttons button:hover {
     background-color: #0059b3; /* Darker shade of Kentucky blue */
     transform: scale(1.15);
+    cursor: pointer;
 }
 
 .project-buttons button:focus {
@@ -156,6 +157,7 @@ nav ul li a {
 .project-card:hover {
     transform: scale(1.25); /* Enlarge the card on hover */
         z-index: 2; /* Ensure all cards are initially on the same stacking level */
+        cursor: pointer;
 
 }
 

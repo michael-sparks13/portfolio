@@ -25,6 +25,20 @@ const projects = [
 		date: "",
 	},
 	{
+		name: "Adirondack 46ers",
+		about:
+			"A map of the 46 Adirondack peaks above 4,000 feet elevation, in National Park Service style.",
+		tools: "Illustrator, QGIS, OpenTopography, OpenStreetMap",
+		link: "images/projects/ADK_46.png",
+		img: "images/projects/ADK_46.png",
+		process:
+			'I first began by downloading the DEM data from OpenTopography and making some adjustments in QGIS. I relied extensively on OpenStreetMap for the "non-peak" data. This project involved a lot of manual work, as I couldnt find a great dataset for the 46ers, so I relied on several different reference maps and placed each peak individually.',
+		type: "static",
+		outcome:
+			"There is a reason the NPS is considered the gold standard of map making. It was so much fun to try and recreate their style for an area I love.",
+		date: "May 2024",
+	},
+	{
 		name: "Lands of the Bible",
 		about:
 			"I wanted to follow NatGeo's example as a way to sharpen my design sense. This helped!",
