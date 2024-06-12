@@ -25,6 +25,20 @@ const projects = [
 		date: "",
 	},
 	{
+		name: "Heat Risk Tracking",
+		about:
+			"In April 2024 the National Weather Service released a new tool called HeatRisk, intended to provide guidance to specific populations based on the contextual factors of heat. This map pulls that data daily and allows users to view the upcoming week's heat risk levels.",
+		tools: "Flask, Heroku, Python, HTML/CSS/JS",
+		link: "https://heatrisk-a96738e8489f.herokuapp.com/",
+		img: "images/projects/heatrisk.png",
+		process:
+			'I modeled my page after a similar map from CNN. I created a Flask app that I eventually deployed to Heroku to serve the site. I did this because Heroku allows me to run a "fetch_data" script at 5am each day to update the maps. The data comes in a geoTIFF format, which makes updating the color scheme difficult, so I simply used various python libraries to add the state boundaries and labels. Everything else was done with standard front-end web tools.',
+		type: "interactive",
+		outcome:
+			"I think this new tool from the NWS is sophisticated and useful. While I may make a few UI changes in the future, this map came out well and I hope it can be a useful too.",
+		date: "June 2024",
+	},
+	{
 		name: "Adirondack 46ers",
 		about:
 			"A map of the 46 Adirondack peaks above 4,000 feet elevation, in National Park Service style.",
