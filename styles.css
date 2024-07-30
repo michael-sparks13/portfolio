@@ -278,6 +278,10 @@ nav ul li a {
     nav ul {
         padding-right: 0;
     }
+
+    .overlay h1 {
+        font-size: 2em
+    }
 }
 
 
