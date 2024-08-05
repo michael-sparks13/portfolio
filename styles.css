@@ -283,17 +283,17 @@ nav ul li a {
         font-size: 2em
     }
 
-    .project-card:hover {
-        transform: none;
-    }
-}
-
-
-/* Responsive styling */
-@media screen and (max-width: 768px) {
     .project-card {
         width: calc(50% - 10px); /* 2 cards per row */
     }
+
+    .project-card:hover {
+        transform: none;
+    }
+
+    .project-cards {
+    margin: 20px; /* Add spacing between cards */
+}
 }
 
 @media screen and (max-width: 480px) {
@@ -305,10 +305,13 @@ nav ul li a {
         transform: none;
     }
 
-    .projects {
-        margin-left: 2%;
-        margin-right: 2%;
+    .project-buttons {
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
-    
+    .project-buttons button {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
