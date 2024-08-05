@@ -296,4 +296,13 @@ nav ul li a {
     .project-card {
         width: calc(100% - 10px); /* 1 card per row */
     }
+
+    .project-card:hover {
+        transform: none;
+    }
+
+    .project-buttons {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
 }
